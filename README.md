@@ -25,6 +25,7 @@ python manage.py createsuperuser
 
 # Django URL patterns
 # Project Urls :
+<pre>
 from django.contrib import admin 
 from django.urls import path, include 
 
@@ -32,7 +33,7 @@ urlpatterns = [
   path('admin/', admin.site.urls),
   path('', include('books.urls')), 
 ] 
-
+</pre>
 # App Urls :
 from django.urls import path 
 from . import views 
