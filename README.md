@@ -5,13 +5,12 @@
 04. pip install django
 
 # Create django project
-django-admin startproject #project nme#
-  
+<pre> django-admin startproject #project nme# </pre>  
 # Create App
-projectName>> python manage.py startapp #appName#  
+<pre> python manage.py startapp #appName# </pre> 
 
 # The development server
-projectName>> python manage.py runserver
+<pre> python manage.py runserver </pre>
 
 # Migrate database
 python manage.py migrate
@@ -35,6 +34,7 @@ urlpatterns = [
 ] 
 </pre>
 # App Urls :
+<pre>
 from django.urls import path 
 from . import views 
 
@@ -43,7 +43,14 @@ urlpatterns = [
 	path('books/<str:genre>/', views.books_by_genre, name="books_by_genre"), 
 	path('books/', views.book_index, name="book_index"), 
 ] 
+</pre>
 
 
 
+# Django View
+# Types of Views
+<pre>
+01. Function Based Views
+02. Class Based Views
+</pre>
 
