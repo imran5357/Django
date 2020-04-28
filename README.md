@@ -14,10 +14,11 @@ projectName>> python manage.py startapp #appName#
 projectName>> python manage.py runserver
 
 # Migrate database
------------------------------
 python manage.py migrate
 
 python manage.py makemigrations
+
+Python manage.py makemigrations a
 
 # Creating an admin user
 -----------------------
