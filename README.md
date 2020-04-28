@@ -8,7 +8,7 @@
 django-admin startproject #project nme#
   
 # Create App
-projectName>> python manage.py startapp <appName>  
+projectName>> python manage.py startapp #appName#  
 
 # The development server
 projectName>> python manage.py runserver
@@ -16,6 +16,8 @@ projectName>> python manage.py runserver
 # Migrate database
 -----------------------------
 python manage.py migrate
+
+python manage.py makemigrations
 
 # Creating an admin user
 -----------------------
