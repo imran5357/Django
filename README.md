@@ -5,7 +5,7 @@
 04. pip install django
 
 # Create django project
-django-admin startproject <<project nme>>
+django-admin startproject #project nme#
   
 # Create App
 projectName>> python manage.py startapp <<appName>>  
