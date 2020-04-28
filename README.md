@@ -64,9 +64,8 @@ from django.urls import path
 from . import views 
 
 urlpatterns = [ 
-	path("books/<int:pk>/", views.book_detail, name="book_detail"), 
-	path("books/<str:genre>/", views.books_by_genre, name="books_by_genre"), 
-	path('books/', views.book_index, name="book_index"), 
+	path('', views.home, name="home"), 
+	path('about/', views.about, name="about"),
 ] 
 </pre>
 
