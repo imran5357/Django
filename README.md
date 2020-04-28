@@ -3,7 +3,7 @@
 01. Python Install & check python --version
 02. Check pip & Check django => python -m django --version
 03. IDE Install
-04. pip install django
+04. pip install django / py -m pip install Django
 </pre>
 # Create django project
 <pre> django-admin startproject #project nme# </pre>  
@@ -77,4 +77,8 @@ urlpatterns = [
 </pre>
 
 # Managing static files (e.g. images, JavaScript, CSS)
+
+
+
+https://www.geeksforgeeks.org/django-tutorial/
 
