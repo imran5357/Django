@@ -8,7 +8,7 @@
 django-admin startproject #project nme#
   
 # Create App
-projectName>> python manage.py startapp <<appName>>  
+projectName>> python manage.py startapp <appName>  
 
 # The development server
 projectName>> python manage.py runserver
