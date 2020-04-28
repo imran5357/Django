@@ -21,7 +21,28 @@ python manage.py makemigrations
 Python manage.py makemigrations a
 
 # Creating an admin user
------------------------
 python manage.py createsuperuser
+
+# Urls
+# Project Urls :
+from django.contrib import admin 
+from django.urls import path, include 
+
+urlpatterns = [
+  path('admin/', admin.site.urls),
+  path('', include('books.urls')), 
+] 
+
+# App Urls :
+from django.urls import path 
+from . import views 
+
+urlpatterns = [ 
+	path('books/<int:pk>/', views.book_detail, name="book_detail"), 
+	path('books/<str:genre>/', views.books_by_genre, name="books_by_genre"), 
+	path('books/', views.book_index, name="book_index"), 
+] 
+
+
 
 
