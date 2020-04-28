@@ -23,7 +23,7 @@ Python manage.py makemigrations a
 # Creating an admin user
 python manage.py createsuperuser
 
-# Urls
+# Django URL patterns
 # Project Urls :
 from django.contrib import admin 
 from django.urls import path, include 
