@@ -2,7 +2,6 @@
 Django is a Python-based web framework which allows you to quickly create web application without all of the installation or dependency problems that you normally will find with other frameworks.
 
 # Why Django?
-
 <pre>
 01. Django is a rapid web development framework that can be used to develop fully fleshed web applications in a short period of time.
 02. It’s very easy to switch database in Django framework.
@@ -11,6 +10,16 @@ Django is a Python-based web framework which allows you to quickly create web ap
 05 .It has thousands of additional packages available.
 06. It is very scalable
 </pre>
+
+# Django architecture
+Django is based on MVT (Model-View-Template) architecture. MVT is a software design pattern for developing a web application.
+MVT Structure has the following three parts –
+
+<b>Model</b>: Model is going to act as the interface of your data. It is responsible for maintaining data. It is the logical data structure behind the entire application and is represented by a database (generally relational databases such as MySql, Postgres).
+
+<b>View</b>: The View is the user interface — what you see in your browser when you render a website. It is represented by HTML/CSS/Javascript and Jinja files.
+
+<b>Template</b>: A template consists of static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted.
 
 # Python & Django Install 
 <pre>
