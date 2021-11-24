@@ -1,3 +1,7 @@
+# Django Basics
+Django is a Python-based web framework which allows you to quickly create web application without all of the installation or dependency problems that you normally will find with other frameworks.
+
+
 # Python & Django Install 
 <pre>
 01. Python Install & check python --version
