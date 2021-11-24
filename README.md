@@ -1,6 +1,16 @@
 # Django Basics
 Django is a Python-based web framework which allows you to quickly create web application without all of the installation or dependency problems that you normally will find with other frameworks.
 
+# Why Django?
+
+<pre>
+01. Django is a rapid web development framework that can be used to develop fully fleshed web applications in a short period of time.
+02. It’s very easy to switch database in Django framework.
+03. It has built-in admin interface which makes easy to work with it.
+04. Django is fully functional framework that requires nothing else.
+05 .It has thousands of additional packages available.
+06. It is very scalable
+</pre>
 
 # Python & Django Install 
 <pre>
@@ -9,6 +19,7 @@ Django is a Python-based web framework which allows you to quickly create web ap
 03. IDE Install
 04. pip install django / py -m pip install Django
 </pre>
+
 # Create django project
 <pre> django-admin startproject #project nme# </pre>  
 # Create App
