@@ -24,26 +24,18 @@ MVT Structure has the following three parts –
 # Installation of Django
 
 # Install pip- Open command prompt and enter following command-
-<pre>
-python -m pip install -U pip
-</pre>
+<pre>python -m pip install -U pip</pre>
 
 # Install virtual environment- Enter following command in cmd-
-<pre>
-pip install virtualenv
-</pre>
+<pre>pip install virtualenv</pre>
 
 # Set Virtual environment- Enter following command in cmd-
 
  01. Create a virtual environment by giving this command in cmd-
-<pre>
-virtualenv env_site
-</pre>
+<pre>virtualenv env_site</pre>
 
  02. Change directory to env_site by this command-
-<pre>
-cd env_site
-</pre>
+<pre>cd env_site</pre>
 
  03. Go to Script directory inside env_site and activate virtual environment-
 <pre>
@@ -51,7 +43,11 @@ cd Script
 activate
 </pre>
 
-# Python & Django Install 
+# Install Django- Install django by giving following command-
+<pre>pip install django</pre>
+
+or
+
 <pre>
 01. Python Install & check python --version
 02. Check pip & Check django => python -m django --version
@@ -60,12 +56,16 @@ activate
 </pre>
 
 # Create django project
-<pre> django-admin startproject #project nme# </pre>  
-# Create App
-<pre> python manage.py startapp #appName# </pre> 
+<pre> django-admin startproject #project_name# 
+cd project_name
+</pre> 
 
 # The development server
 <pre> python manage.py runserver </pre>
+
+# Create App
+<pre> python manage.py startapp #application_name# </pre> 
+
 
 # Application definition
 <pre>
@@ -76,9 +76,34 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp', //Ur app name
+    
+    'application_name', //Your app name
 ]
 </pre>
+
+
+# Django URL patterns
+# Project Urls :
+<pre>
+from django.contrib import admin 
+from django.urls import path, include 
+
+urlpatterns = [
+  path('admin/', admin.site.urls),
+  path('', include('application_name.urls')), # Enter the app name in following syntax for this to work
+] 
+</pre>
+# Application Urls :
+<pre>
+from django.urls import path 
+from . import views 
+
+urlpatterns = [ 
+	path('', views.home, name="home"), 
+	path('about/', views.about, name="about"),
+] 
+</pre>
+
 
 # Template Directory Path
 <pre>
@@ -91,6 +116,16 @@ TEMPLATES = [
     },
 ]
 </pre>
+or
+<pre>
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [BASE_DIR / 'templates'],  // Custome setting
+        'APP_DIRS': True,
+        ...
+    }
+</pre>
 # Create database
 python manage.py migrate
 
@@ -100,28 +135,6 @@ Python manage.py makemigrations a
 
 # Creating an admin user
 python manage.py createsuperuser
-
-# Django URL patterns
-# Project Urls :
-<pre>
-from django.contrib import admin 
-from django.urls import path, include 
-
-urlpatterns = [
-  path('admin/', admin.site.urls),
-  path('', include('books.urls')), 
-] 
-</pre>
-# App Urls :
-<pre>
-from django.urls import path 
-from . import views 
-
-urlpatterns = [ 
-	path('', views.home, name="home"), 
-	path('about/', views.about, name="about"),
-] 
-</pre>
 
 # Django View
 # Types of Views
