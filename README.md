@@ -21,6 +21,36 @@ MVT Structure has the following three parts –
 
 <b>Template</b>: A template consists of static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted.
 
+# Installation of Django
+
+# Install pip- Open command prompt and enter following command-
+<pre>
+python -m pip install -U pip
+</pre>
+
+# Install virtual environment- Enter following command in cmd-
+<pre>
+pip install virtualenv
+</pre>
+
+# Set Virtual environment- Enter following command in cmd-
+
+ 01. Create a virtual environment by giving this command in cmd-
+<pre>
+virtualenv env_site
+</pre>
+
+ 02. Change directory to env_site by this command-
+<pre>
+cd env_site
+</pre>
+
+ 03. Go to Script directory inside env_site and activate virtual environment-
+<pre>
+cd Script
+activate
+</pre>
+
 # Python & Django Install 
 <pre>
 01. Python Install & check python --version
