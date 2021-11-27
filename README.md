@@ -145,7 +145,7 @@ python manage.py createsuperuser
 
 # Managing static files (e.g. images, JavaScript, CSS)
 
-01. Make sure that <p>django.contrib.staticfiles</p> is included in your INSTALLED_APPS.
+01. Make sure that <pre>django.contrib.staticfiles</pre> is included in your INSTALLED_APPS.
 
 
 https://www.geeksforgeeks.org/django-tutorial/
