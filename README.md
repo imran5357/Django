@@ -92,6 +92,9 @@ urlpatterns = [
   path('admin/', admin.site.urls),
   path('', include('application_name.urls')), # Enter the app name in following syntax for this to work
 ] 
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 </pre>
 # Application Urls :
 <pre>
@@ -145,8 +148,54 @@ python manage.py createsuperuser
 
 # Managing static files (e.g. images, JavaScript, CSS)
 
-01. Make sure that <pre>django.contrib.staticfiles</pre> is included in your INSTALLED_APPS.
+01. Make sure that
+<pre>django.contrib.staticfiles</pre>
+is included in your INSTALLED_APPS.
 
+02. In your settings file, define STATIC_URL, for example:
+<pre>STATIC_URL = '/static/'</pre>
+
+03. In your templates, use the static template tag to build the URL for the given relative path using the configured STATICFILES_STORAGE.
+
+Loading Static Files:
+<pre>{% load static %}</pre>
+Reference Static Files:
+<pre>
+<img src="{% static 'my_app/example.jpg' %}">
+or
+<script src="{% static "jquery.js" %}"></script>
+or
+<a href="{% static 'downloads/polls_20101022.tar.gz' %}">
+</pre>
+
+04. STATICFILES_DIRS
+
+<pre>
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+    #'/var/www/static/',
+]
+</pre>
+
+05. STATIC_ROOT
+<pre>
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+or
+if not DEBUG: 
+    STATIC_ROOT = '/home/django/www-data/site.com/static/'
+or
+STATIC_ROOT = BASE_DIR / 'static'
+</pre>
+
+06. STATICFILES_FINDERS
+07. STATICFILES_STORAGE
+
+
+08. In your settings file, define MEDIA_URL, for example:
+<pre>MEDIA_URL = '/media/'</pre>
+
+09. In your settings file, define MEDIA_ROOT, for example:
+<pre>MEDIA_ROOT = BASE_DIR / 'media'</pre>
 
 https://www.geeksforgeeks.org/django-tutorial/
 
