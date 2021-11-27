@@ -162,13 +162,13 @@ Loading Static Files:
 
 Reference Static Files:
 <pre>
-  <code>
-	<img src="{% static 'my_app/example.jpg' %}">
+
+	'<img src="{% static 'my_app/example.jpg' %}">'
 	or
-	<script src="{% static "jquery.js" %}"></script>
+	'<script src="{% static "jquery.js" %}"></script>'
 	or
-	<a href="{% static 'downloads/polls_20101022.tar.gz' %}">
-  </code>
+	'<a href="{% static 'downloads/polls_20101022.tar.gz' %}">'
+
 </pre>
 
 04. STATICFILES_DIRS
