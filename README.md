@@ -159,22 +159,23 @@ is included in your INSTALLED_APPS.
 
 Loading Static Files:
 <pre>{% load static %}</pre>
+
 Reference Static Files:
 <pre>
-"
-<img src="{% static 'my_app/example.jpg' %}">
-or
-<script src="{% static "jquery.js" %}"></script>
-or
-<a href="{% static 'downloads/polls_20101022.tar.gz' %}">
-"
+  <code>
+	<img src="{% static 'my_app/example.jpg' %}">
+	or
+	<script src="{% static "jquery.js" %}"></script>
+	or
+	<a href="{% static 'downloads/polls_20101022.tar.gz' %}">
+  </code>
 </pre>
 
 04. STATICFILES_DIRS
 
 <pre>
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static',
     #'/var/www/static/',
 ]
 </pre>
