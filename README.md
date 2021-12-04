@@ -43,6 +43,9 @@ cd Script
 activate
 </pre>
 
+# Manage package dependencies with requirements.txt 
+<pre>pip freeze > requirements.txt</pre>
+
 # Install Django- Install django by giving following command-
 <pre>pip install django</pre>
 
