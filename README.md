@@ -175,16 +175,21 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
     #'/var/www/static/',
 ]
+or
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+    #'/var/www/static/',
+]
 </pre>
 
 05. STATIC_ROOT
 <pre>
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
+STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn")
 or
 if not DEBUG: 
     STATIC_ROOT = '/home/django/www-data/site.com/static/'
 or
-STATIC_ROOT = BASE_DIR / 'static'
+    STATIC_ROOT = BASE_DIR / 'static'
 </pre>
 
 06. STATICFILES_FINDERS
