@@ -32,10 +32,12 @@ MVT Structure has the following three parts –
 8. PIP
 
 # Django Requirements
-
+<pre>
 Ptython 3.0 or Higher
 PIP
 Text/Code Editor: Notepad++, VScode, ATOM, PyCharm, Brackets etc
+</pre>
+
 # Installation of Django
 
 # Install pip- Open command prompt and enter following command-
