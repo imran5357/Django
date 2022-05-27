@@ -38,6 +38,13 @@ PIP
 Text/Code Editor: Notepad++, VScode, ATOM, PyCharm, Brackets etc
 </pre>
 
+# Check Version
+<pre>
+Ptython 3.0 or Higher : python --version
+PIP		      : pip --version
+django		      : django-admin --version
+</pre>
+
 # Installation of Django
 
 # Install pip- Open command prompt and enter following command-
