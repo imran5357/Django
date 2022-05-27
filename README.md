@@ -21,6 +21,17 @@ MVT Structure has the following three parts –
 
 <b>Template</b>: A template consists of static parts of the desired HTML output as well as some special syntax describing how dynamic content will be inserted.
 
+# Requirements for Learning Django
+1. HTML
+2. CSS
+3. Javascript
+4. bootstrap
+5. SQL
+6. Python
+7. MVT
+8. PIP
+
+
 # Installation of Django
 
 # Install pip- Open command prompt and enter following command-
